@@ -10,7 +10,7 @@ use log::{info, trace};
 // use tonic::{server::ClientStreamingService, transport::Server, Request, Response, Status};
 use entropy_grpc as proto;
 use proto::{entropy_client::EntropyClient, GetPartyRequest};
-use tonic::{Request};
+use tonic::Request;
 
 lazy_static! {
     // todo: There's definitely a better way to get my IP address
