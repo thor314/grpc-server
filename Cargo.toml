@@ -3,8 +3,6 @@ name = "server-signing-grpc"
 version = "0.1.0"
 edition = "2021"
 
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
-
 [[bin]]
 name = "server"
 path = "src/server.rs"
@@ -13,24 +11,13 @@ path = "src/server.rs"
 name = "client"
 path = "src/client.rs"
 
-
-
 [dependencies]
 entropy-grpc = { path = "../grpc" }
 lazy_static = "1.4.0"
 tonic = "0.7.2"
 prost = "0.10.3"
-prost-types = "0.10.1"
 tokio = { version = "1.15.0", features = ["rt-multi-thread"] }
 tokio-stream = "0.1.8"
-futures = "0.3.19"
-diesel = { version = "1.4.8", features = ["postgres", "r2d2", "numeric", "chrono"] }
-diesel_migrations = "1.4.0"
-chrono = { version = "0.4.19", features = ["serde"] }
-serde = { version = "1.0.132", features = ["derive"] }
-serde_json = "1.0.73"
 log = "0.4.14"
 env_logger = "0.9.0"
 dotenv = "0.15.0"
-rust-embed = "6.3.0"
-hyper = "0.14.18"
